@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  crawly:
+    build: .
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: crawly
+      POSTGRES_PASSWORD: 8161f6a2b2451a978c129bf0b7526838c1d4215c
+      POSTGRES_DB: crawly
+    ports:
+      - "5432:5432"

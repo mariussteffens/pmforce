@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function test(event) {
+    if (origin_check(event.origin)) {
+      eval(event.data)
+    }
+  }
+
+  function real_origin_check(origin) {
+    if (origin === 'https://foo.shizzle') {
+      return true
+    }
+    return false
+  }
+
+  function origin_check(origin) {
+    return real_origin_check(origin);
+  }
+
+  window.addEventListener('message', test);
+</script>
+</body>
+</html>

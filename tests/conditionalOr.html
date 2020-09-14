@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function test(e) {
+    if (e.origin !== 'https://foo.com')
+      return;
+    var messageData = JSON.parse(e.data);
+    if (!messageData.callback || messageData.callback.indexOf('function') == -1)
+      return;
+    try {
+      var paramas = JSON.parse(messageData.data)
+    } catch (e) {
+      var paramas = messageData.data
+    }
+    eval('(' + messageData.callback + ')')(paramas)
+  }
+
+  window.addEventListener('message', test);
+</script>
+</body>
+</html>

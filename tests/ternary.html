@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function test(e) {
+    let o;
+    e.data.mode == 'asdf' && e.data.modo == '123' ? o = e.data.eval : o = '1';
+    document.write('<script src="' + o + '"></scr' + 'ipt>');
+  }
+
+  window.addEventListener('message', test);
+</script>
+</body>
+</html>

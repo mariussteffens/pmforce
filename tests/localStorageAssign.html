@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function test(e) {
+    localStorage[e.data.key] = e.data.value
+  }
+
+
+  window.addEventListener('message', test);
+</script>
+</body>
+</html>

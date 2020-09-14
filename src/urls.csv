@@ -1,0 +1,16 @@
+http://127.0.0.1:8000/conditionalOr.html
+http://127.0.0.1:8000/cookie.html
+http://127.0.0.1:8000/doubleInjection.html
+http://127.0.0.1:8000/externalFun.html
+http://127.0.0.1:8000/forLoopArray.html
+http://127.0.0.1:8000/ifPropertyExists.html
+http://127.0.0.1:8000/indexOfOriginCheck.html
+http://127.0.0.1:8000/lazyExpression.html
+http://127.0.0.1:8000/localStorageAssign.html
+http://127.0.0.1:8000/localStorageSetItem.html
+http://127.0.0.1:8000/multiReplace.html
+http://127.0.0.1:8000/popupWrite.html
+http://127.0.0.1:8000/regexMatch.html
+http://127.0.0.1:8000/regexObj.html
+http://127.0.0.1:8000/sliceAndSearch.html
+http://127.0.0.1:8000/ternary.html

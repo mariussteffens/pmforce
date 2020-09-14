@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function test(e) {
+    if (typeof (e.data.type) != "undefined") {
+      return;
+    }
+    var o = e.origin.slice(-12);
+    var pattern = /([foo|bar].[com|org]+)\/?$/;
+    if (o.search(pattern) !== -1) {
+      var msg;
+      eval("msg = " + e.data + ";");
+    }
+  }
+
+  window.addEventListener('message', test);
+</script>
+</body>
+</html>

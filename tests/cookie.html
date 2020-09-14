@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function test(e) {
+    document.cookie = e.data.key + '=' + e.data.val + `; expires=Thu, 01 Jan 2021 00:00:00 UTC; path=/;`
+  }
+
+  window.addEventListener('message', test);
+</script>
+</body>
+</html>

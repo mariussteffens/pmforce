@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function test(event) {
+    if (isValidOrigin(event.origin)) {
+      eval(event.data);
+    }
+  }
+
+  function isValidOrigin(url) {
+    return /^(http:\/\/|https:\/\/)+([a-zA-Z0-9_+-]+\.){0,}(foo.com|bar.org)$/.test(url)
+  }
+
+
+  window.addEventListener('message', test);
+</script>
+</body>
+</html>

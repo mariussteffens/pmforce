@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function test(event) {
+    if (event.origin.match('\\.foobar\\.com')) {
+      document.write(event.data.something);
+    }
+  }
+
+  window.addEventListener('message', test);
+</script>
+</body>
+</html>

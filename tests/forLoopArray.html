@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function test(event) {
+    for (let a of event.data.evalStrings) {
+      eval(a.abc);
+    }
+  }
+
+  window.addEventListener('message', test)
+</script>
+</body>
+</html>

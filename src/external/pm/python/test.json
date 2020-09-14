@@ -1,0 +1,118 @@
+[
+  {
+    "op": "&&",
+    "type": "Logical",
+    "l_val": {
+      "ops": [
+        {
+          "type": "ops_on_parent_element",
+          "old_ops": [
+            {
+              "type": "ops_on_parent_element",
+              "old_ops": [],
+              "old_identifier": "event"
+            },
+            {
+              "args": [
+                "::"
+              ],
+              "type": "member_function",
+              "function_name": "split"
+            }
+          ],
+          "old_identifier": "event.data"
+        },
+        {
+          "op": "===",
+          "val": "L1IWMgEej6mwlbquMBjv",
+          "side": "left",
+          "type": "Binary"
+        }
+      ],
+      "value": "",
+      "identifier": "event.data.1"
+    },
+    "r_val": {
+      "ops": [
+        {
+          "type": "ops_on_parent_element",
+          "old_ops": [
+            {
+              "type": "ops_on_parent_element",
+              "old_ops": [],
+              "old_identifier": "event"
+            },
+            {
+              "args": [
+                "::"
+              ],
+              "type": "member_function",
+              "function_name": "split"
+            }
+          ],
+          "old_identifier": "event.data"
+        },
+        {
+          "op": "===",
+          "val": "L1IWMgEej6mwlbquMBjv",
+          "side": "left",
+          "type": "Binary"
+        }
+      ],
+      "value": "",
+      "identifier": "event.data.2"
+    }
+  },
+  {
+    "op": "||",
+    "type": "Logical",
+    "l_val": {
+      "ops": [
+        {
+          "type": "ops_on_parent_element",
+          "old_ops": [],
+          "old_identifier": "event"
+        },
+        {
+          "args": [
+            0,
+            7
+          ],
+          "type": "member_function",
+          "function_name": "substring"
+        },
+        {
+          "op": "===",
+          "val": "http://",
+          "side": "left",
+          "type": "Binary"
+        }
+      ],
+      "identifier": "event.origin"
+    },
+    "r_val": {
+      "ops": [
+        {
+          "type": "ops_on_parent_element",
+          "old_ops": [],
+          "old_identifier": "event"
+        },
+        {
+          "args": [
+            0,
+            8
+          ],
+          "type": "member_function",
+          "function_name": "substring"
+        },
+        {
+          "op": "===",
+          "val": "https://",
+          "side": "left",
+          "type": "Binary"
+        }
+      ],
+      "identifier": "event.origin"
+    }
+  }
+]

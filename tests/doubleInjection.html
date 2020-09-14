@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function test(e) {
+    if (e.data.type != "foo") return;
+    eval("(" + decodeURI(e.data.p1) + ")(" + e.data.dt + ")")
+  }
+
+  window.addEventListener('message', test);
+</script>
+</body>
+</html>
