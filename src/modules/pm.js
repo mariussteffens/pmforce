@@ -21,7 +21,7 @@ const exec = require('child_process').exec;
 
 const TEST_TIMEOUT = 1000 * 60 * 2;
 const SAT_TIMEOUT = 1000 * 30;
-const HANDLER_PATH = '/tmp/handlers/';
+const HANDLER_PATH = '/handlers';
 
 class PMModule extends BaseModule {
   constructor(chrome, page, job, db, logger) {
